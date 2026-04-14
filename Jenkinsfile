@@ -27,10 +27,10 @@ pipeline {
         
         
        
-        stage('Run Application') {
+        stage('Package') {
             steps {
                 // Start the JAR application
-                sh 'gradle run'
+                sh 'gradle build'
             }
         }
 
